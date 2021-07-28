@@ -19,3 +19,6 @@ from .models import Test
 
 def my_scheduled_job():
     Test.objects.create(name = 'test')
+    print("printed from crontab")
+    f = open('/Users/mande/Desktop/app.txt','w')
+    f.close() 
